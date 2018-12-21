@@ -1,0 +1,23 @@
+=================================	EPSCOR PROJECT		=====================================================
+- Learn about serverless.
+- Work with alessio and Figure out whats wrong with openwhisk configuration.
+- How we can use python script in openwhisk environments.
+- What are our options to deploy code scripts in openwhisk.
+- Figure out how to run machine learning algorithms inside openwhisk.
+- Should be able to provide a template file to the script defining target, training variables and which algorithms to use and to set     different parameters of the algorithm.
+- Create some kind of UI/Dashboard to upload data sets and to apply machine learning algorithms onto those datasets.
+- Instead of template user should be able to upload CSV, Excel and text files onto UI.
+- Create line graphs to show performance of algorithms.
+- Create algorithm comparison graph.
+- Create error bar graph to show the performance of docker and openwhisk.
+- Start working on manuscript.
+
+=================================	Voice Control drone	======================================================
+- Create feature comparison sheet of popular NLP apis.
+- Meet with Matthew to learn about what he is doing on the project, how much he has done and what left.
+- Find some better speech to text api to input user voice for drone commands.
+- Implement finite state machine in python.
+- Create client server architecture for communication between drone and controller(user input device)
+- Parse user commands and create a key word based dictionary of user commands.
+
+=================================	Internship meetings	=======================================================
