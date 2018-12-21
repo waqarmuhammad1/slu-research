@@ -1,0 +1,1 @@
+{"algos": ["Elastic Net Regression", "Linear Regression", "Lars Regression", "Lasso Regression"], "iterations": null, "sheet_name": "plot_parameter", "target_vars": ["DB", "FB"], "training_vars": ["B", "G", "GNDVI", "Green", "Height", "IKAW", "INT", "IPCA", "NIR", "LAI", "NDVI"]}

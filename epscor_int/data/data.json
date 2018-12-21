@@ -1,0 +1,1 @@
+{"algos": ["Linear Regression", "Lasso Regression", "Support Vector Regressor (SVR)"], "iterations": null, "sheet_name": "plot_parameter", "target_vars": ["DB", "FB"], "training_vars": ["B", "G", "GNDVI", "Green", "Height"]}
