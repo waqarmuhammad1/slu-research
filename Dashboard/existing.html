@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title>Spell Checker</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"
+        media="screen,projection" />
+
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+        media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
+    <div class="navbar-fixed">
+
+        <!-- Dropdown Structure -->
+
+        <div class="nav-wrapper">
+            <nav class="black darken-4" role="navigation">
+                <a href="#!" class="brand-logo left" style="height:100px;"><img src="img/logo.png" alt="Mountain View"
+                        style="width:100px;height:100px;"></a>
+                <ul class="center-align">
+                    <h4>Spell Checker</h4>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+    </div>
+
+</header>
+<br>
+
+<style>
+
+    .collapsible{
+ 	border-top: none !important;
+ 	border-right: none !important; 
+    border-left: none !important;
+    box-shadow :0px 0px 0px 0px !important;
+ }
+
+</style>
+
+<body>
+    <aside>
+
+        <ul id="slide-out" class="side-nav grey darken-4 fixed">
+            <div class="white-text">
+                <li><a href="newLanguage.html" class="white-text truncate">New Language</a></li>
+                <li><a href="existing.html" class="white-text truncate">Existing Language</a></li>
+
+                <li><a href="#" class="white-text">Tutorials</a></li>
+                <li><a href="#" class="white-text">About</a></li>
+
+            </div>
+        </ul>
+    </aside>
+    <div class="container">
+
+        <div class="input-field col s1" style="width:250px;">
+            <select id="select1" class="browser-default">
+                <option value="" disabled selected>Select Language</option>
+
+            </select>
+        </div>
+
+        <a class="waves-effect waves-light btn red hoverable" id="drawgraph"><i class="material-icons left">mode_edit</i> Get data</a>
+        <br><br>
+
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a class="active" href="#root">Root Words & Forms</a></li>
+                    <li class="tab col s3"><a href="#affix">Dictionary & Suffix</a></li>
+                </ul>
+            </div>
+            <ul class="collapsible col s12" id="root" style="height:600px; overflow:auto;">
+
+
+
+            </ul>
+            <ul class="collapsible col s12" id="affix">
+                <div class="row">
+                    <form class="col s6">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Dictionary</label>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="col s6">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Affix Data</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </ul>
+            <!-- <div id="root" class="col s12">
+
+                
+            </div> -->
+            <!-- <div id="affix" class="col s12">
+
+                
+
+            </div> -->
+        </div>
+
+    </div>
+
+
+    </div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<script type="text/javascript" src="controllers/kickout.js"></script>
+<script>
+
+    $('select').material_select();
+
+</script>
+
+</html>

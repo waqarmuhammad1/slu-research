@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title>Spell Checker</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"
+        media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <div class="navbar-fixed">
+
+        <!-- Dropdown Structure -->
+
+        <div class="nav-wrapper">
+            <nav class="black darken-4" role="navigation">
+                <a href="#!" class="brand-logo left" style="height:100px;"><img src="img/logo.png" alt="Mountain View"
+                        style="width:100px;height:100px;"></a>
+                <ul class="center-align">
+                    <h4>Spell Checker</h4>
+                    <!-- <a class="waves-effect waves-light btn" id="btn_login"> Sign Out    </a> -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+</header>
+<br>
+<style>
+    /* textarea.materialize-textarea{height: 20rem;} */
+textarea.empty{
+    height: 0px;
+    padding: 2px;
+}
+
+.collapsible{
+ 	border-top: none !important;
+ 	border-right: none !important; 
+    border-left: none !important;
+    box-shadow :0px 0px 0px 0px !important;
+ }
+/* .btn-floating.waves-effect.waves-light { border: 2px solid #fff; } */
+</style>
+
+<body>
+    <aside>
+        <ul id="slide-out" class="side-nav black fixed">
+            <div class="white-text">
+                <li><a href="newLanguage.html" class="white-text truncate">New Language</a></li>
+                <li><a href="existing.html" class="white-text truncate">Existing Language</a></li>
+
+                <li><a href="academic.html" class="white-text">Tutorials</a></li>
+                <li><a href="tutors.html" class="white-text">About</a></li>
+
+            </div>
+        </ul>
+    </aside>
+    <div class="container">
+
+        <div class="row">
+            <div class="input-field col s2">
+                <input value="" id="lang_name" type="text" class="validate">
+                <label class="active" for="lang_name">Language Name</label>
+            </div>
+
+            <div class="input-field col s2">
+                <input value="" id="lang_symbol" type="text" class="validate">
+                <label class="active" for="lang_symbol">Language Symbol</label>
+            </div>
+        </div>
+
+        <ul class="collapsible" id="col112">
+            <li id="custom_li_1">
+                <div class="collapsible-header"><i class="material-icons">add_circle</i>Add Root Word 1</div>
+                <div class="collapsible-body">
+
+                    <div class="row" id="root_fields">
+
+                        <div class="input-field col s2" style="left:30px">
+                            <input value="" id="custom_root_1" type="text" class="validate">
+                            <label class="active" for="custom_root_1">Root Word</label>
+                        </div>
+
+                        <form class="col s11">
+                            <div class="row">
+                                <div class="input-field" style="left:40px;">
+                                    <textarea id="custom_txt_area_1" class="materialize-textarea"></textarea>
+                                    <label for="custom_txt_area_1">Dictionary</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="row">
+            <div class="col">
+                <a class="btn-floating waves-effect red hoverable btn-large tooltipped" data-position="bottom"
+                    data-tooltip="Save Dictionary" style="left:10px;white-space:normal;font-weight: bold;" id="drawGraph">
+                    <i class="material-icons right">save</i>Save</a>
+            </div>
+            <div class="col">
+                <a class="btn-floating waves-effect red hoverable btn-large tooltipped" data-position="bottom"
+                    data-tooltip="Generate Affix File" style="left:10px;white-space:normal;font-weight: bold;"><i class="material-icons right">assessment</i>
+                    Generate</a>
+            </div>
+
+            <div class="col right" style="top:100px;" id="btn_add">
+
+                <a class="btn-floating btn-large waves-effect waves-light red  tooltipped" data-position="bottom"
+                    data-tooltip="Add More Rows">
+                    <i class="material-icons">add</i></a>
+
+
+            </div>
+
+        </div>
+
+        <!-- FIXED ACTION BUTTON -->
+        <div class="fixed-action-btn">
+            <a href="#" class="btn-floating red btn-large"><i class="large material-icons">mode_edit</i></a>
+            <ul>
+                <li>
+                    <div class="file-field input-field">
+                        <div class="btn-floating green btn-large ">
+                            <i class="material-icons">attach_file</i><input type="file">
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="height:500px"></div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<!-- Plotly -->
+<script src="plotly-latest.min.js"></script>
+<script type="text/javascript" src="controllers/academic.js"></script>
+
+</html>

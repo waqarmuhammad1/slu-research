@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="plotly-latest.min.js"></script>
+</head>
+<style>
+    body {
+        margin: 20px auto;
+        font-family: 'Lato';
+        font-weight: 300;
+        text-align: center;
+    }
+
+    #line-chart {
+        margin: 0 auto;
+        height: 450px;
+    }
+</style>
+
+<body>
+    <div id="bar-chart">
+
+
+        
+    </div>
+    <script>
+
+        var barDiv = document.getElementById('bar-chart');
+
+        var primaryGDP = {
+            x: ["Linear Regression", "Elastic Net Regression"],
+            y: [9.099404689006494, 9.306009271671448],
+            type: 'bar',
+            name: 'RMSE%'
+        };
+
+        var secondaryGDP = {
+            x: ["Linear Regression", "Elastic Net Regression"],
+            y: [0.40619636353148336, 0.3789252775786891],
+            type: 'bar',
+            name: 'Nash'
+        };
+
+        var tertiaryGDP = {
+            x: ["Linear Regression", "Elastic Net Regression"],
+            y: [3.4434509852350477, 3.5216355234599748],
+            type: 'bar',
+            name: 'RMSE'
+        };
+
+        var data = [primaryGDP, secondaryGDP, tertiaryGDP];
+        console.log(data)
+        console.log(typeof(data))
+        var layout = {
+            title: 'Nominal GDP Sector Composition of Top 8 Countries',
+            barmode: 'group',
+            bargap: 0.25,
+            bargroupgap: 0.1,
+            barnorm: 'percent'
+        };
+
+        Plotly.newPlot(barDiv, data, layout);
+
+
+    </script>
+</body>
+
+</html>

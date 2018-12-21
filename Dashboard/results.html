@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+</head>
+
+<style>
+
+.card-panel {
+        border-radius: 20px;
+    }
+.nav-wrapper{
+    border-bottom: 20px;
+}
+
+.file-field{
+    width: 250px;
+    height: 40px;
+}
+
+.c1{
+    padding:20px;
+    white-space:nowrap;
+    height: 600px;
+    overflow-y: auto; 
+    overflow-x:auto;
+}
+
+#line-chart {
+        margin: auto;
+        height: 450px;
+    }
+@media (min-width: 481px) and (max-width: 767px) 
+    {
+        .fontsize {
+            font-size: 18px !important;
+        }
+    }
+
+@media (min-width: 320px) and (max-width: 480px)
+{
+    .fontsize {
+        font-size: 18px !important;
+    }
+
+}
+i.medium {
+        font-size: 2.4rem !important;
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="nav-wrapper #01579b light-blue darken-4">
+            <a href="#!" class="brand-logo center truncate fontsize">EPSCoR Data Integration and Analysis</a>
+            <ul class="right hide-on-med-and-down"></ul>
+        </div>
+    </nav>
+    <!-- Modal Structure -->
+
+    <div class="row">
+
+
+
+
+
+        <div class="col s12 m4 offset-m4">
+
+            <div class="card-panel #42a5f5 blue lighten-1 hoverable" style="height:200px" id="poka">
+                <a href="" class="white-text" style="font-weight:bold;font-size:15px;"><i class="medium material-icons left">add_circle</i>
+                    Machine Learning Algorithms</a>
+                <div class="row">
+
+                    <div class="col s8">
+                        <div class="chips chips-autocomplete disabled" id="target_chips"></div>
+                    </div>
+                    <div class="col s4">
+                        <a class="btn waves-effect waves-light hoverable #01579b light-blue darken-4" id="target">Done<i
+                                class="material-icons right">done</i></a>
+                    </div>
+                </div>
+                <!-- <select multiple id="target">
+                    <option value="" disabled selected>Choose your option</option>
+                </select> -->
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- </div> -->
+
+
+    <div class="row">
+
+
+        <div class="col s12 m2">
+
+            <div class="card-panel #81d4fa #42a5f5 blue lighten-1" style="height:500px;padding-top: 20%;">
+                <span class="white-text">
+
+                    <a href="" class="white-text" style="font-weight:bold;font-size:18px;"><i class="medium material-icons left">explore</i>Statistical
+                        Analysis</a>
+                    <br><br><br><br><br>
+                    <a href="" class="white-text" style="font-weight:bold;font-size:18px;"><i class="medium material-icons left">donut_small</i>Machine
+                        Learning</a>
+                    <br><br><br><br><br>
+                    <a href="" class="white-text" style="font-weight:bold;font-size:18px;"><i class="medium material-icons left">donut_small</i>Results
+                        Comparison</a>
+
+                </span>
+            </div>
+
+        </div>
+
+        <!-- <div class="c1 col s10" id="md">
+
+           
+
+        </div> -->
+
+        <div class="c1 col m10 s12" id="plots-content">
+            <ul class="tabs" id="plots-title">
+                
+                <!-- <li class="tab col "><a href="#plot1">Test 1</a></li>
+                <li class="tab col "><a href="#plot2">Test 2</a></li>
+                <li class="tab col "><a href="#plot3">Disabled Tab</a></li>
+                <li class="tab col "><a href="#plot4">Test 4</a></li>
+                <li class="tab col "><a href="#plot4">Test 5</a></li>
+                <li class="tab col "><a href="#plot4">Test 6</a></li>
+                <li class="tab col "><a href="#plot4">Test 7</a></li>
+                <li class="tab col "><a href="#plot4">Test 8</a></li>
+                <li class="tab col "><a href="#plot4">Test 9</a></li>
+                <li class="tab col "><a href="#plot4">Test 10</a></li>
+                <li class="tab col "><a href="#plot4">Test 11</a></li>
+                <li class="tab col "><a href="#plot4">Test 12</a></li>
+                <li class="tab col "><a href="#plot4">Test 13</a></li> -->
+            </ul>
+            <!-- <div id="plot1" class="col s12">t</div>
+            <div id="plot2" class="col s12">t1</div>
+            <div id="plot3" class="col s12">t2</div>
+            <div id="plot4" class="col s12">t3</div> -->
+        </div>
+        <div id="bar-chart"></div>
+       
+
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="controllers/results.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+    <!-- <script src="plotly-latest.min.js"></script> -->
+
+
+</body>
+
+</html>
